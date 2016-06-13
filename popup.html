@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RSS Timeliner - Chrome Extension</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/enscroll.js"></script>
+        <script type="text/javascript" src="js/general.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>
+    </head>
+    <body>
+        <section class="container">
+            <header class="header">
+                <img id="rsstLogo" src="images/48.png" height="48" width="48" alt="RSS Timeliner">
+                <div><h2>RSS Timeliner</h2></div>
+                <div><h4>Where the place which organise your RSS feeds in timeline!</h4></div>
+            </header>
+            <div class="rsst">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1" title="All RSS feeds timeline">Feeds</li>
+                    <li class="tab-link" data-tab="tab-2" title="All favorites feeds">Favorites</li>
+                    <li class="tab-link" data-tab="tab-3" title="All RSS urls screen">Feeds URLs</li>
+                    <li class="tab-link" data-tab="tab-4" title="More extensions and others products"><span class="new-tab">New</span>Products</li>
+                    <li class="tab-link" data-tab="tab-5" title="Share this extension? I love you!">Like & Share</li>
+                </ul>
+                <div id="tab-1" class="tab-content current feeds-content">
+               		<div class="rsst-search-feeds-box">
+                    <input type="text" name="searchFeeds" class="search-feeds" value="" placeholder="Search inside feeds..." title="Search about any feed by typing the title or description"/>
+                    <a class="uibutton confirm refresh-feeds-button large" href="#" title="Refresh Feeds">
+                    	<img src="images/refresh.png" height="16" width="16" alt="">
+                    </a>
+                    </div>
+                    <div class="feeds-content-list">
+                        <div class="image-preview"><img src="" /></div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-content feeds-favorit-list">
+               		<div class="rsst-search-feeds-box">
+                    <input type="text" name="searchFavoriteFeeds" class="search-feeds" value="" placeholder="Search inside feeds..." />
+                    </div>
+                    <div class="favorit-feeds-content-list">
+                    	<img class="loaderImg" src="images/loader.gif" height="32" width="32" />
+                        <div class="image-preview"><img src="" /></div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-content">
+					<div class="rsst-website-url">
+						<input type="text" name="feedUrlInput" class="feed-url-input" value="" placeholder="Enter RSS URL" />
+						<a class="uibutton confirm add-rss-url-button" href="#" title="Add RSS feed URL">Add</a>
+						
+						<label for="rtlText" title="">
+							<input id="rtlText" name="textDirection" type="radio" value="rtl" />
+						Text Right to Left</label>
+						
+						<label for="ltrText" title=""><input id="ltrText" name="textDirection" type="radio" value="ltr" checked="checked" />
+							Text Left to Right </label>
+
+					</div>
+					<div class="websites-feed-url">
+		               
+					</div>
+				</div>
+
+				<div id="tab-4" class="tab-content my-products-list">
+					<img class="loaderImg" src="images/loader.gif" height="32" width="32" alt="">
+				</div>
+
+				<div id="tab-5" class="tab-content">
+					<div class="social-media">
+						<p><b>Share the extension? Appreciated! </b></p>
+						<a href="#" id="facebookShare"><img src="images/Facebook.png" height="48" width="48" alt="Facebook Icon"></a>
+						<a href="#" id="twitterShare"><img src="images/Twitter.png" height="48" width="48" alt="Twitter Icon"></a>
+						<a href="#" id="googlePlusShare"><img src="images/GooglePlus.png" height="48" width="48" alt="Google Plus"></a>
+					</div>
+				</div>
+
+			</div>
+<div class="website-url-search-box">
+	<input type="text" name="feedSearchInput" class="feed-search-input" value="" placeholder="Search in websites title... " />
+</div>
+<footer class="footer">
+    <a target="_blank" href="http://goo.gl/Y1ElGc"><img src="images/logo.png" height="25" width="25" alt="Alpha Tech">  By: Mohammad M. AlBanna</a>
+    <a title="Go to the top" id="goUpLink" href="#">&uarr;</a>
+</footer>
+</section>
+</body>
+</html>
